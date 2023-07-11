@@ -52,6 +52,15 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+.menu_item_g.active {
+  background: linear-gradient(90deg, rgba(93,99,255,0.1) 0%, rgba(93,99,255,0) 100%);
+  border-left: 0.3vh solid #5d63ff;
+}
+.menu_item_g.active .grid_link {
+  background-image: url("../../../../public/img/grid_p.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .menu_item_u {
   cursor: pointer;
   transition: 0.3s;
@@ -81,6 +90,15 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+.menu_item_u.active {
+  background: linear-gradient(90deg, rgba(93,99,255,0.1) 0%, rgba(93,99,255,0) 100%);
+  border-left: 0.3vh solid #5d63ff;
+}
+.menu_item_u.active .user_link {
+  background-image: url("../../../../public/img/user_p.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .menu_item_m {
   cursor: pointer;
   transition: 0.3s;
@@ -106,6 +124,15 @@
   background-image: url("../../../../public/img/megaphone.svg");
 }
 .menu_item_m:hover > .megaphone_link {
+  background-image: url("../../../../public/img/megaphone_p.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.menu_item_m.active {
+  background: linear-gradient(90deg, rgba(93,99,255,0.1) 0%, rgba(93,99,255,0) 100%);
+  border-left: 0.3vh solid #5d63ff;
+}
+.menu_item_m.active .megaphone_link {
   background-image: url("../../../../public/img/megaphone_p.svg");
   background-repeat: no-repeat;
   background-position: center;

@@ -5,6 +5,7 @@
     margin-top 3.5vh
     sizer(92vw, 6.8vh)
 .menu_title
+    user-select: none
     color: #FFF;
     font-family: Overpass;
     font-size: 34px;
@@ -13,6 +14,7 @@
     line-height: 118%;
     letter-spacing: 0.68px;
 .menu_title_subtitle
+    user-select: none
     color: #FFF;
 
     font-family: Open Sans;
@@ -46,6 +48,7 @@
     opacity 1
     sizer(5.1vw, 2.7vh)
 .paid_btn
+    user-select: none
     margin-right: 2vh
     transition: .2s
     opacity 0
@@ -86,9 +89,14 @@
     line-height: normal;
     letter-spacing: 0.22px;
 .profile
+    transition: .2s
+    border-radius: 12px;
     flexer(c,c,rn)
     margin-left 0.8vh
+.profile:hover
+    background: #474747;
 .bell_con
+    cursor: pointer
     margin-left 0.9vw
     transition 0.2s
     flexer(c,c,rw)

@@ -19,15 +19,15 @@ export default function NavBar(){
         <div id='nav' className='nav_bar'>
             <img className='nav_logo' src="./img/logo.png" alt="" />
             <nav className="navigation_menu">
-                <NavLink to = '/' className="menu_item_g">
+                <NavLink activeClassName="active_g" to = '/' className="menu_item_g">
                     <div className="grid_link"></div>
                 </NavLink>
                 <NavLink  to='/clients' className="menu_item_u">
                     <div className="user_link"></div>
                 </NavLink>
-                <div className="menu_item_m">
+                <NavLink to='/requests' className="menu_item_m">
                     <div className="megaphone_link"></div>
-                </div>
+                </NavLink>
                 <div className="menu_item_h">
                     <div className="home_link"></div>
                 </div>

@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import { Routes, Route } from 'react-router-dom'
 import ClientPage from '../../pages/ClientPage/client'
+import Dashboard from '../../pages/DashBoard/dashboard'
+import Request from '../../pages/RequestPage/request'
 import MainHeader from '../MainHeader/mainHeader'
 
 import './dist/main.css'
@@ -24,7 +26,9 @@ export default function Main(){
             <MainHeader/>
             <div className="main_container">
                 <Routes>
+                    <Route index element={<Dashboard/>}/>
                     <Route path='clients' element={<ClientPage/>}/>
+                    <Route path='requests' element={<Request/>}/>
                 </Routes>
             </div>
 

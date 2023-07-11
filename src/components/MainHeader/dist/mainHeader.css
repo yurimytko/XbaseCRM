@@ -10,6 +10,7 @@
   height: 6.8vh;
 }
 .menu_title {
+  user-select: none;
   color: #fff;
   font-family: Overpass;
   font-size: 34px;
@@ -19,6 +20,7 @@
   letter-spacing: 0.68px;
 }
 .menu_title_subtitle {
+  user-select: none;
   color: #fff;
   font-family: Open Sans;
   font-size: 15px;
@@ -74,6 +76,7 @@
   height: 2.7vh;
 }
 .paid_btn {
+  user-select: none;
   margin-right: 2vh;
   transition: 0.2s;
   opacity: 0;
@@ -123,6 +126,8 @@
   letter-spacing: 0.22px;
 }
 .profile {
+  transition: 0.2s;
+  border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,7 +135,11 @@
   flex-flow: row nowrap;
   margin-left: 0.8vh;
 }
+.profile:hover {
+  background: #474747;
+}
 .bell_con {
+  cursor: pointer;
   margin-left: 0.9vw;
   transition: 0.2s;
   display: flex;

@@ -19,6 +19,10 @@ export default function MainHeader(){
             setTittle('Клієнти')
             setSubtitle('Всього 1 782 клієнтів')
         }
+        else if(location.pathname === `/requests`) {
+            setTittle('Запити')
+            setSubtitle('1 837 нових запитів')
+        }
       }, [location]);
 
     
