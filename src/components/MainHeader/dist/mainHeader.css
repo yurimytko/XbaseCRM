@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@500&display=swap");
+.main_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-flow: row nowrap;
+  margin-top: 3.5vh;
+  width: 92vw;
+  height: 6.8vh;
+}
+.menu_title {
+  color: #fff;
+  font-family: Overpass;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 118%;
+  letter-spacing: 0.68px;
+}
+.menu_title_subtitle {
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  opacity: 0.400000005960464;
+}
+.profile_con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row nowrap;
+}
+.price_con {
+  transition: 0.2s;
+  width: 15.1vw;
+  height: 6.1vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-flow: row nowrap;
+  border-radius: 12px;
+}
+.price_con:hover {
+  border-radius: 12px;
+  background: #474747;
+}
+.price_con:hover > .price_block_main {
+  margin-left: 2vh;
+}
+.line {
+  width: 0.05vw;
+  height: 5vh;
+  opacity: 0.100000001490116;
+  background: #fff;
+}
+.price_block_main {
+  transition: 0.2s;
+  margin-left: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-flow: column nowrap;
+}
+.price_con:hover > .paid_btn {
+  opacity: 1;
+  width: 5.1vw;
+  height: 2.7vh;
+}
+.paid_btn {
+  margin-right: 2vh;
+  transition: 0.2s;
+  opacity: 0;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row wrap;
+  width: 0vw;
+  height: 2.7vh;
+  border-radius: 6px;
+  border: 1.2px solid #fff;
+  color: #fff;
+  font-family: Overpass;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+  letter-spacing: 0.24px;
+}
+.paid_btn:hover {
+  background: #fff;
+  color: #2c2c2c;
+}
+.paid_btn:hover ~ .price_block_main {
+  margin-left: 2vh;
+}
+.price {
+  color: #fff;
+  font-family: Overpass;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+  letter-spacing: 0.3px;
+}
+.paid {
+  color: rgba(255,255,255,0.4);
+/* Aditional text */
+  font-family: Open Sans;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.22px;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row nowrap;
+  margin-left: 0.8vh;
+}
+.bell_con {
+  margin-left: 0.9vw;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row wrap;
+  border-radius: 10px;
+  width: 3.3vh;
+  height: 3.3vh;
+}
+.bell {
+  transition: 0.2s;
+  width: 3vh;
+  height: 3vh;
+  background-image: url("../../../../public/img/notification.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bell_con:hover {
+  background: #fff;
+}
+.bell_con:hover > .bell {
+  background-image: url("../../../../public/img/notification_b.svg");
+}
+.profile_name_con {
+  margin-left: 0.9vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: flex-end;
+  flex-flow: column nowrap;
+}
+.profile_name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row nowrap;
+  gap: 8px;
+}
+.tag {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row wrap;
+  width: 68px;
+  height: 18px;
+  border-radius: 5px;
+  background: rgba(88,174,255,0.357);
+}
+.tag span {
+  position: absolute;
+  top: 4px;
+  color: #58afff;
+  text-align: center;
+  font-family: Overpass;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+  letter-spacing: 0.22px;
+  text-transform: uppercase;
+}
+.p_name {
+  color: #fff;
+  text-align: right;
+/* H4 */
+  font-family: Overpass;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 118%;
+  letter-spacing: 0.3px;
+}
+.email {
+  color: #fff;
+  text-align: right;
+/* Aditional text */
+  font-family: Open Sans;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.22px;
+  opacity: 0.400000005960464;
+}
+.main_avatar {
+  margin-left: 0.7vw;
+}

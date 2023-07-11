@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap");
+.LoginPage {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  flex-flow: row nowrap;
+  width: 100vw;
+  height: 100vh;
+  background: url("auth/auth-background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.form_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row nowrap;
+  width: 100%;
+  height: 100%;
+}
+.filter-con {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(44,44,44,0.65);
+  width: 100%;
+  height: 100%;
+}
+.auth_logo {
+  top: 0;
+  left: 0;
+  z-index: 3;
+  position: absolute;
+  margin: 2.6vh 0 0 2.2vh;
+}
+.forms_container {
+  width: 180vh;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row nowrap;
+}
+.register_container {
+  transition: 0.4s;
+  position: relative;
+  z-index: 3;
+  width: 35vh;
+  height: 20vh;
+  text-align: center;
+  margin-right: 68vh;
+  margin-left: 15vh;
+}
+.register_text {
+  color: #fff;
+  font-family: 'Overpass', sans-serif;
+  font-size: 3.4vh;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 118%;
+  letter-spacing: 0.06vh;
+}
+.grey_text {
+  transition: 0.4s;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.04vh;
+}
+.enter_form {
+  transition: 0.2s;
+  width: 22.3vh;
+  height: 4.2vh;
+  margin-top: 2.8vh;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 1vh;
+  color: #fff;
+  text-align: center;
+  font-family: 'Overpass', sans-serif;
+  font-size: 2vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+  letter-spacing: 0.04vh;
+}
+.enter_form:hover {
+  transition: 0.2s;
+  width: 22.3vh;
+  height: 4.2vh;
+  margin-top: 2.8vh;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 1vh;
+  color: #000;
+  text-align: center;
+  font-family: 'Overpass', sans-serif;
+  font-size: 2vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+  letter-spacing: 0.04vh;
+}
+.login_container {
+  transition: 0.4s;
+  position: relative;
+  z-index: 3;
+  width: 40.7vh;
+  height: 38vh;
+  text-align: center;
+  align-items: center;
+}
+.welcome_text {
+  color: #fff;
+  font-family: 'Overpass', sans-serif;
+  font-size: 3.4vh;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 118%;
+  letter-spacing: 0.06vh;
+}
+.grey_text_second {
+  transition: 0.4s;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.04vh;
+  opacity: 0.4;
+}
+.inputs_container {
+  transition: 0.4s;
+  width: 36.8vh;
+  height: 0vh;
+  overflow: hidden;
+}
+.input_name_main {
+  width: 36vh;
+  height: 4vh;
+  margin-top: 4vh;
+  border-radius: 0.7vh;
+  border: 0.13vh solid rgba(255,255,255,0.3);
+  background-color: transparent;
+}
+.input_name_main::placeholder {
+  position: absolute;
+  left: 1.6vh;
+  color: rgba(255,255,255,0.3);
+  font-family: 'Overpass', sans-serif;
+  font-size: 2vh;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 118%;
+  letter-spacing: 0.04vh;
+}
+.input_name {
+  width: 36vh;
+  height: 4vh;
+  margin-top: 2vh;
+  border-radius: 0.7vh;
+  border: 0.13vh solid rgba(255,255,255,0.3);
+  background-color: transparent;
+}
+.input_name::placeholder {
+  position: absolute;
+  left: 1.6vh;
+  color: rgba(255,255,255,0.3);
+  font-family: 'Overpass', sans-serif;
+  font-size: 2vh;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 118%;
+  letter-spacing: 0.04vh;
+}
+.input_container {
+  transition: 0.4s;
+  width: 40.7vh;
+  height: 16vh;
+}
+.input_login {
+  width: 36vh;
+  height: 4.5vh;
+  margin-top: 5.3vh;
+  border-radius: 0.7vh;
+  border: 0.13vh solid rgba(255,255,255,0.3);
+  background-color: transparent;
+}
+.input_login::placeholder {
+  position: absolute;
+  left: 1.6vh;
+  color: rgba(255,255,255,0.3);
+  font-family: 'Overpass', sans-serif;
+  font-size: 2vh;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 118%;
+  letter-spacing: 0.04vh;
+}
+.input_password {
+  width: 36vh;
+  height: 4.5vh;
+  margin-top: 2vh;
+  border-radius: 0.7vh;
+  border: 0.13vh solid rgba(255,255,255,0.3);
+  background-color: transparent;
+}
+.input_password::placeholder {
+  position: absolute;
+  left: 1.6vh;
+  color: rgba(255,255,255,0.3);
+  font-family: 'Overpass', sans-serif;
+  font-size: 2vh;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 118%;
+  letter-spacing: 0.04vh;
+}
+.enter_form_right {
+  transition: 0.2s;
+  width: 12vh;
+  height: 4.5vh;
+  margin-top: 4vh;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 1vh;
+  color: #fff;
+  text-align: center;
+  font-family: 'Overpass', sans-serif;
+  font-size: 2vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+  letter-spacing: 0.04vh;
+}
+.enter_form_right:hover {
+  transition: 0.2s;
+  width: 12vh;
+  height: 4.5vh;
+  margin-top: 6vh;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 1vh;
+  color: #000;
+  text-align: center;
+  font-family: 'Overpass', sans-serif;
+  font-size: 2vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+  letter-spacing: 0.04vh;
+}
+.swaper_block {
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+  right: -11vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row nowrap;
+  width: 49vw;
+  height: 100vh;
+  background: #2c2c2c;
+  transform: skewx(-24deg);
+  transition: 0.4s;
+}
+.pattern_box {
+  transition: 0.4s;
+  transform: skewx(24deg);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-flow: row nowrap;
+  position: relative;
+}
+.background_img {
+  position: relative;
+  opacity: 6%;
+}
+.sneg_filter {
+  background: #fff;
+  width: 26.125rem;
+  height: 26.125rem;
+  border-radius: 26.125rem;
+  position: relative;
+  filter: blur(95px);
+}
+#pattern_box1 {
+  top: 43vh;
+  left: 5vh;
+}
+#sneg_filter1 {
+  top: -5vh;
+  left: 25vw;
+}
+#pattern_box2 {
+  top: -30vh;
+  left: -10vw;
+}
+#sneg_filter2 {
+  top: 15vh;
+  left: 2vw;
+}
+#background_img1 {
+  width: 25.4vw;
+  height: 35vh;
+  background: radial-gradient(circle, rgba(0,0,0,0) 0%, #2c2c2c 70%), url("../../../../public/img/backSnezhinka.png");
+}
+#background_img2 {
+  width: 38.4vw;
+  height: 88vh;
+  background: radial-gradient(circle, rgba(0,0,0,0) 0%, #2c2c2c 70%), url("../../../../public/img/backSnezhinka2.png");
+}

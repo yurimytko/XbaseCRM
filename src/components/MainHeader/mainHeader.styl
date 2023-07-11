@@ -1,0 +1,154 @@
+@import '../../mixinspack/mixins.styl'
+
+.main_header
+    flexer(sb,c,rn)
+    margin-top 3.5vh
+    sizer(92vw, 6.8vh)
+.menu_title
+    color: #FFF;
+    font-family: Overpass;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 118%;
+    letter-spacing: 0.68px;
+.menu_title_subtitle
+    color: #FFF;
+
+    font-family: Open Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    opacity: 0.4000000059604645;
+.profile_con
+    flexer(c,c,rn)
+.price_con
+    transition: .2s
+    sizer(15.1vw, 6.1vh)
+    flexer(sb,c,rn)
+    border-radius: 12px;
+.price_con:hover
+    border-radius: 12px;
+    background: #474747;
+.price_con:hover > .price_block_main
+    margin-left 2vh
+.line
+    sizer(0.05vw, 5vh)
+    opacity: 0.10000000149011612;
+    background: #FFF;
+.price_block_main
+    transition 0.2s
+    margin-left 4vw
+    flexer(c,s,cn)
+.price_con:hover > .paid_btn
+    opacity 1
+    sizer(5.1vw, 2.7vh)
+.paid_btn
+    margin-right: 2vh
+    transition: .2s
+    opacity 0
+    overflow: hidden
+    cursor: pointer
+    flexer(c,c,rw)
+    sizer(0vw, 2.7vh)
+    border-radius: 6px;
+    border: 1.2px solid #FFF;
+    color: #FFF;
+    font-family: Overpass;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118%;
+    letter-spacing: 0.24px;
+.paid_btn:hover
+    background: #FFFFFF
+    color #2C2C2C
+.paid_btn:hover ~ .price_block_main
+    margin-left 2vh
+
+.price
+    color: #FFF;
+    font-family: Overpass;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118%;
+    letter-spacing: 0.3px;
+.paid
+    color: rgba(255, 255, 255, 0.40);
+    /* Aditional text */
+    font-family: Open Sans;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.22px;
+.profile
+    flexer(c,c,rn)
+    margin-left 0.8vh
+.bell_con
+    margin-left 0.9vw
+    transition 0.2s
+    flexer(c,c,rw)
+    border-radius: 10px;
+    sizer(3.3vh,3.3vh)
+.bell
+    transition 0.2s
+    sizer(3vh,3vh)
+    background-image: url(../../../../public/img/notification.svg)
+    background-repeat: no-repeat;
+    background-position: center 
+.bell_con:hover
+    background: #fff
+.bell_con:hover > .bell
+    background-image: url(../../../../public/img/notification_b.svg)
+.profile_name_con
+    margin-left 0.9vw
+    flexer(c,e,cn)
+.profile_name
+    flexer(c,c,rn)
+    gap 8px
+.tag
+    position relative
+    flexer(c,c,rw)
+    width: 68px;
+    height: 18px;
+    border-radius: 5px;
+    background: #58aeff5b;
+    span
+        position: absolute
+        top 4px
+        color: #58AFFF;
+        text-align: center;
+        font-family: Overpass;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 118%;
+        letter-spacing: 0.22px;
+        text-transform: uppercase;
+.p_name
+    color: #FFF;
+    text-align: right;
+    /* H4 */
+    font-family: Overpass;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 118%;
+    letter-spacing: 0.3px;
+.email
+    color: #FFF;
+    text-align: right;
+    /* Aditional text */
+    font-family: Open Sans;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.22px;
+    opacity: 0.4000000059604645;
+.main_avatar
+    margin-left 0.7vw

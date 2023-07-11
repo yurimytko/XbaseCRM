@@ -1,0 +1,280 @@
+@import '../../mixinspack/mixins.styl'
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap');
+
+.LoginPage
+    flexer(e,c,rn)
+    sizer(100vw,100vh)
+    background: url('auth/auth-background.png')
+    background-repeat: no-repeat
+    background-size: 100%
+    position: relative
+    overflow: hidden
+    
+.form_main
+    flexer(c,c,rn)
+    sizer(100%,100%)
+    
+.filter-con
+    position: absolute
+    z-index: 1
+    background-color: rgba(44, 44, 44, 0.65)
+    sizer(100%,100%)
+.auth_logo
+    top 0
+    left 0
+    z-index: 3
+    position: absolute
+    margin 2.6vh 0 0 2.2vh
+.forms_container
+    sizer(180vh,60vh)
+    flexer(c,c,rn)
+    
+.register_container
+    transition: .4s
+    position: relative
+    z-index: 3
+    sizer(35vh,20vh)
+    text-align: center
+    margin-right: 68vh
+    margin-left: 15vh
+
+
+.register_text
+    color: white
+    font-family: 'Overpass',sans-serif
+    font-size: 3.4vh
+    font-style: normal
+    font-weight: 300
+    line-height: 118%
+    letter-spacing: 0.06vh
+
+.grey_text
+    transition 0.4s
+    color: rgba(255, 255, 255, 1)
+    font-family: 'Open Sans',sans-serif
+    font-size: 2vh
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    letter-spacing: 0.04vh
+
+.enter_form
+    transition: .2s
+    sizer(22.3vh,4.2vh)
+    margin-top: 2.8vh
+    background-color: transparent
+    border: 1px solid white
+    border-radius: 1vh
+    color: white
+    text-align: center
+    font-family: 'Overpass',sans-serif
+    font-size: 2vh
+    font-style: normal
+    font-weight: 400
+    line-height: 118%
+    letter-spacing: 0.04vh
+
+.enter_form:hover
+    transition: .2s
+    sizer(22.3vh,4.2vh)
+    margin-top: 2.8vh
+    background-color: white
+    border: 1px solid white
+    border-radius: 1vh
+    color: black
+    text-align: center
+    font-family: 'Overpass',sans-serif
+    font-size: 2vh
+    font-style: normal
+    font-weight: 400
+    line-height: 118%
+    letter-spacing: 0.04vh
+
+.login_container
+    transition: .4s
+    position: relative
+    z-index: 3
+    sizer(40.7vh,38vh)
+    text-align: center
+    align-items: center
+    
+.welcome_text
+    color: white
+    font-family: 'Overpass',sans-serif
+    font-size: 3.4vh
+    font-style: normal
+    font-weight: 300
+    line-height: 118%
+    letter-spacing: 0.06vh
+
+.grey_text_second
+    transition .4s
+    color: rgb(255, 255, 255)
+    font-family: 'Open Sans',sans-serif
+    font-size: 2vh
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    letter-spacing: 0.04vh 
+    opacity: 0.4
+
+.inputs_container
+    transition: .4s
+    sizer(36.8vh,0vh)
+    overflow: hidden
+
+.input_name_main
+    sizer(36vh,4vh)
+    margin-top: 4vh
+    border-radius: 0.7vh
+    border: 0.13vh solid rgba(255, 255, 255, 0.30);
+    background-color: transparent
+.input_name_main::placeholder
+    position: absolute
+    left: 1.6vh
+    color: rgba(255,255,255,0.30)
+    font-family: 'Overpass',sans-serif
+    font-size: 2vh
+    font-style: normal
+    font-weight: 300
+    line-height: 118%
+    letter-spacing: 0.04vh
+
+.input_name
+    sizer(36vh,4vh)
+    margin-top: 2vh
+    border-radius: 0.7vh
+    border: 0.13vh solid rgba(255, 255, 255, 0.30);
+    background-color: transparent
+
+.input_name::placeholder
+    position: absolute
+    left: 1.6vh
+    color: rgba(255,255,255,0.30)
+    font-family: 'Overpass',sans-serif
+    font-size: 2vh
+    font-style: normal
+    font-weight: 300
+    line-height: 118%
+    letter-spacing: 0.04vh
+
+.input_container
+    transition: .4s
+    sizer(40.7vh,16vh)
+
+.input_login
+    sizer(36vh,4.5vh)
+    margin-top: 5.3vh
+    border-radius: 0.7vh
+    border: 0.13vh solid rgba(255, 255, 255, 0.30);
+    background-color: transparent
+
+.input_login::placeholder
+    position: absolute
+    left: 1.6vh
+    color: rgba(255,255,255,0.30)
+    font-family: 'Overpass',sans-serif
+    font-size: 2vh
+    font-style: normal
+    font-weight: 300
+    line-height: 118%
+    letter-spacing: 0.04vh
+
+
+.input_password
+    sizer(36vh,4.5vh)
+    margin-top: 2vh
+    border-radius: 0.7vh
+    border: 0.13vh solid rgba(255, 255, 255, 0.30);
+    background-color: transparent
+
+.input_password::placeholder
+    position: absolute
+    left: 1.6vh
+    color: rgba(255,255,255,0.30)
+    font-family: 'Overpass',sans-serif
+    font-size: 2vh
+    font-style: normal
+    font-weight: 300
+    line-height: 118%
+    letter-spacing: 0.04vh
+
+.enter_form_right
+    transition: .2s
+    sizer(12vh,4.5vh)
+    margin-top: 4vh
+    background-color: transparent
+    border: 1px solid white
+    border-radius: 1vh
+    color: white
+    text-align: center
+    font-family: 'Overpass',sans-serif
+    font-size: 2vh
+    font-style: normal
+    font-weight: 400
+    line-height: 118%
+    letter-spacing: 0.04vh
+
+.enter_form_right:hover
+    transition: .2s
+    sizer(12vh,4.5vh)
+    margin-top: 6vh
+    background-color: white
+    border: 1px solid white
+    border-radius: 1vh
+    color: black
+    text-align: center
+    font-family: 'Overpass',sans-serif
+    font-size: 2vh
+    font-style: normal
+    font-weight: 400
+    line-height: 118%
+    letter-spacing: 0.04vh
+
+
+.swaper_block
+    position absolute
+    z-index: 2
+    overflow: hidden 
+    right: -11vw
+    flexer(c,c,rn)
+    sizer(49vw,100vh)
+    background: #2C2C2C
+    transform: skewx(-24deg)
+    transition: .4s
+
+
+.pattern_box
+    transition: .4s
+    transform: skewx(24deg)
+    flexer(s,s,rn)
+    position: relative
+.background_img
+    position: relative
+    opacity: 6%
+.sneg_filter
+    background: #FFF
+    sizer(26.125rem,26.125rem)
+    border-radius: 26.125rem
+    position: relative 
+    filter: blur(95px);
+
+#pattern_box1
+    top 43vh
+    left 5vh
+#sneg_filter1
+    top -5vh
+    left 25vw
+#pattern_box2
+    top -30vh
+    left -10vw
+#sneg_filter2
+    top 15vh
+    left 2vw
+#background_img1
+    sizer(25.4vw, 35vh)
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(44,44,44,1) 70%),  url(../../../../public/img/backSnezhinka.png)  
+#background_img2
+    sizer(38.4vw,88vh)
+    background:radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(44,44,44,1) 70%), url(../../../../public/img/backSnezhinka2.png) 

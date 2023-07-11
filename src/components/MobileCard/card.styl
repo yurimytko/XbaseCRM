@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@500&display=swap');
+@import '../../mixinspack/mixins.styl'
+
+.Card
+    transform-origin: center bottom;
+    transition: .2s
+    sizer(36vh,45vh)
+    position: absolute
+    z-index: 100
+.img1
+    sizer(100%,100%)
+    position absolute
+
+
+.card_bottom_info
+    z-index 300
+    position absolute
+    left 1.5vh
+    bottom 1.3vh
+    flexer(s,s,cn)
+    gap 1vh
+
+.open_valute_block
+    flexer(c,c,rn)
+    position: absolute
+    right 0
+    z-index 900
+
+.arrow_con
+    sizer(93.22% , 4.8vh)
+    flexer(sb,c,rn)
+.arrow_con_filter
+    position: absolute
+    z-index 600
+    flexer(c,c,rn)
+    top 24vh
+    sizer(100% , 4.8vh)
+
+
+.card_info_block
+    sizer(100%, 1.8vh)
+    fonter('Open Sans',400,1.3vh,normal)
+    color: #FFF;
+    letter-spacing: 0.026vh;
+    flexer(s,c,rn)
+    gap .8vh
+.card_info_img
+    sizer(1.6vh, 1.6vh)
+
+.card_info
+    flexer(c,c,rn)
+.break
+    sizer(.1vh, 1.6vh)
+    border-radius: 10px;
+    opacity: 0.3199999928474426;
+    background: #FFF;
+.first_card_filter
+    border-radius: 13px;
+    background: linear-gradient(11deg, #2C2C2C 7.62%, rgba(44, 44, 44, 0.00) 47.60%);
+    filter: blur(.10250521898269653vh);
+    position absolute
+    sizer(100%,100%)
+    z-index 200
+
+.card_title
+    color #FFF
+    fonter(Overpass,500,2vh,118%)
+    text-transform: uppercase;
+    letter-spacing:  0.4px;
+    width 26.7vh
+
+.price_block
+    position: absolute
+    z-index: 300
+    sizer(12vh,2.7vh)
+    border-radius: .7vh
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(0, 0, 0, 0.40);
+    flexer(s,c,rw)
+    box-sizing: border-box
+    padding-left: 1vh
+    color #81FB21;
+    fonter(Overpass,400,1.8vh,118%)
+    letter-spacing: 0.36px;
+    top 1.5vh
+    left 1.5vh
+    span
+        margin-top .3vh
+    .break_price
+        opacity: 0.30000001192092896;
+        background: #FFF;
+        sizer(.1vh,2.5vh)
+        margin-left .9vh
+.valute_open
+    sizer(2.2vh,100%)
+    flexer(c,c,cn)
+    z-index: 500
+    position relative
+
+.change_valute
+    text-align: c
+    border-radius: .7vh;
+    border: .1vh solid rgba(255, 255, 255, 0.30);
+    background: rgba(0, 0, 0, 0.40);
+    backdrop-filter: blur(4px);
+    sizer(2.8vh,2.7vh)
+    flexer(c,c,rn)
+    color #81FB21;
+    position absolute
+    z-index: 400
+    transition .5s
+    span
+        margin-top .45vh
+#arrow_btn
+    z-index: 500
+    position: absolute
+    transition: .5s
+    transform: rotate(0deg)
+    opacity 1
+
+#euro
+    opacity: 0
+    left 0vh
+#dollar
+    opacity: 0
+    left 0vh
+#grivnya
+    opacity: 0
+    left 0vh
+.arrow_close
+    sizer(0.846rem,0.1rem)
+    background #81FB21
+    border-radius 10vh
+.valute_close
+    sizer(2vh,2.8vw)
+    opacity: 0
+    flexer(c,c,rn)
+    transform: rotate(0deg)
+    transition: .5s
+
+#arrow1
+    position absolute
+    z-index: 500
+    transform: rotate(45deg)
+#arrow2
+    z-index: 500
+    position: absolute
+    transform: rotate(-45deg)
+

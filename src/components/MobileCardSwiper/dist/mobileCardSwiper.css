@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@500&display=swap");
+.CardSwiperContainer {
+  min-width: 100%;
+  transition: 0.5s;
+  width: 100%;
+  height: 49.1vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row nowrap;
+  transform: translateX(-100%);
+}
+.CardSwiperContainer > :nth-child(1) {
+  width: 31.51vh;
+  height: 39.4vh;
+  filter: brightness(60%);
+  top: 0;
+}
+.CardSwiperContainer > :nth-child(2) {
+  width: 34.2vh;
+  height: 42.75vh;
+  filter: brightness(60%);
+  top: 1.2vh;
+}
+.CardSwiperContainer > :nth-child(3) {
+  top: 2.5vh;
+}

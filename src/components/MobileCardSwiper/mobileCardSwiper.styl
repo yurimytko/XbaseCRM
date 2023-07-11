@@ -1,0 +1,19 @@
+@import '../../mixinspack/mixins.styl'
+
+.CardSwiperContainer
+    min-width: 100%
+    transition: 0.5s
+    sizer(100%,49.1vh)
+    position relative 
+    flexer(c,c,rn)
+    transform: translateX(-100%)
+.CardSwiperContainer > :nth-child(1)
+    sizer(31.51vh,39.4vh)
+    filter: brightness(60%)
+    top 0
+.CardSwiperContainer > :nth-child(2)
+    sizer(34.2vh,42.75vh)
+    filter: brightness(60%)
+    top 1.2vh
+.CardSwiperContainer > :nth-child(3)  
+    top 2.5vh
