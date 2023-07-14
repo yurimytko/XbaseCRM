@@ -1,0 +1,151 @@
+@import '../../../mixinspack/mixins.styl'
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+.Desk_card_con
+    overflow: hidden
+    position: relative
+    sizer(20.75rem,100%)
+    min-width: 20.75rem
+    &:hover > .desk_fav
+        right .65vw
+.Desk_card
+    sizer(100%,100%)
+
+.sel_card_img_con
+    position relative
+    sizer(100%,53.5%)
+    overflow: hidden
+.sel_card_img
+    sizer(100%,100%)
+.square  
+    transform: skewX(-44deg)
+    sizer(6.29vw,4.82vh) 
+    position: absolute
+    top 0 
+    left -2.3vh 
+    flexer(e,c,rn)
+    background: #2C2C2C
+#square_text
+    margin-right: 1vw
+    opacity: 0.4000000059604645;
+    transform: skewX(44deg)
+    color: #FFF;
+    text-align: right;
+    font-family: Overpass;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 118%;
+    letter-spacing: 0.4px;
+
+.card_price
+    transform: skewX(-44deg)
+    sizer(9.004vw,4.82vh) 
+    background: #2C2C2C
+    position: absolute
+    bottom 0
+    right -2.3vh
+    flexer(s,c,rn)
+    
+
+#card_price_text
+    margin-left: 1.3vw
+    transform: skewX(44deg) 
+    color: #81FB21;
+    text-align: right;
+    font-family: Overpass;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 118%; 
+    letter-spacing: 0.4px;
+
+.sel_card_title
+    margin: 2.5vh 0 1.6vh 0
+    width: 80%
+    color: #FFF;
+    font-family: Overpass;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 26px */
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+.sel_card_location
+    margin-bottom 0.8vh
+    flexer(s,c,rn)
+    gap 0.5rem
+.sel_card_location_text
+    margin-top: 0.25rem
+    color: #ffffff90;
+    font-family: Overpass;
+    font-size: 1.9vh;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 118%; /* 17.7px */
+    letter-spacing: 0.3px;
+
+.sel_card_info
+    flexer(s,c,rn)
+    sizer(100%, 2.4vh)
+    overflow: hidden
+    gap 12px
+.sel_card_info_subcon
+    flexer(s,c,rn)
+    gap 8px
+.sel_card_info_break
+    sizer(1px,5vh)
+    border-radius: 10px;
+    opacity: 0.3199999928474426;
+    background: #FFF;
+.sel_card_info_text
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 1.5vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.3px;
+.sel_card_about
+    margin-top 1.5vh
+    color: #FFF;
+    font-family: Overpass;
+    font-size: 2vh;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 118%; /* 17.7px */
+    letter-spacing: 0.3px;
+    opacity: 0.4000000059604645;
+
+.send_to_rieltor
+    margin-top: 2.7vh
+    outline: none
+    border none
+    sizer(100%,6vh)
+    border-radius: 0.9vh;
+    background: rgba(93, 99, 255, 0.70);
+    color: #FFF;
+    text-align: center;
+    font-family: Overpass;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 118%; 
+    letter-spacing: 0.3px;
+
+.desk_fav
+    transition: .5s
+    position: absolute
+    top 1vh
+    flexer(s,c,rn)
+    right: -7vw
+    gap 1vh
+.deck_like
+    sizer(2.5rem,2.5rem)
+    flexer(c,c,rn)
+    border-radius: .8vh;
+#deck_like
+    background: #5A9E49
+#deck_dislike
+    background: #D15B5B

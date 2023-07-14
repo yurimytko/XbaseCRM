@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap");
 .LoginPage {
@@ -23,6 +24,7 @@
   flex-flow: row nowrap;
   width: 100%;
   height: 100%;
+  position: absolute;
 }
 .filter-con {
   position: absolute;
@@ -92,6 +94,7 @@
   font-weight: 400;
   line-height: 118%;
   letter-spacing: 0.04vh;
+  cursor: pointer;
 }
 .enter_form:hover {
   transition: 0.2s;
@@ -242,6 +245,7 @@
   font-weight: 400;
   line-height: 118%;
   letter-spacing: 0.04vh;
+  cursor: pointer;
 }
 .enter_form_right:hover {
   transition: 0.2s;
@@ -323,4 +327,87 @@
   width: 38.4vw;
   height: 88vh;
   background: radial-gradient(circle, rgba(0,0,0,0) 0%, #2c2c2c 70%), url("../../../../public/img/backSnezhinka2.png");
+}
+.Thanks {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+.form_con_thnx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: column nowrap;
+  text-align: center;
+  width: 40.88vh;
+  height: 17.15vh;
+}
+.reg_thanks {
+  text-align: center;
+  color: #fff;
+  font-family: 'Overpass', sans-serif;
+  font-size: 3.5vh;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 118%;
+  letter-spacing: 0.06vh;
+}
+.wait_response {
+  width: 37.8vh;
+  height: 5.36vh;
+  margin-top: 0.5vh;
+  color: rgba(255,255,255,0.4);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.04vh;
+}
+.home_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row nowrap;
+  transition: 0.3s;
+  width: 15.5vh;
+  height: 4.2vh;
+  border-radius: 0.8vh;
+  border: 0.13vh solid #fff;
+  font-family: 'Overpass', sans-serif;
+  font-size: 2vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+  letter-spacing: 0.04vh;
+  margin-top: 2.8vh;
+}
+.home_button:hover {
+  transition: 0.3s;
+  width: 18vh;
+  height: 4.2vh;
+  cursor: pointer;
+}
+.blur_div {
+  width: 100%;
+  height: 100%;
+  background: url("auth/auth-background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(0.4vh);
+  opacity: 0%;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
 }

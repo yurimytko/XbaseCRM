@@ -16,9 +16,14 @@ export default function Main(){
 
     useEffect(()=>{
         if(window.location.pathname === '/autorization'){
-            document.getElementById("main").style.display = 'none'
-        }else{
-            document.getElementById("main").style.display = 'flex'
+            document.getElementById("crm").style.display = 'none'
+        }
+
+        else if(window.location.pathname === '/selections'){
+            document.getElementById("crm").style.display = 'none'
+        }
+        else{
+            document.getElementById("crm").style.display = 'flex'
         }
     },[])
     return(

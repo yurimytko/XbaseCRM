@@ -62,7 +62,7 @@ export function MobileHeader({fakedata, price, currency, img, setImg, setLike}){
         <div id='mobile_header' className='mobile_header'>
             <div id="realtor_contact" className="realtor_contact">
                 <div className="realtor_info_block">
-                    <img src="./img/avatar.png" alt="" />
+                    <img src={process.env.PUBLIC_URL +"/img/avatar.png"} alt="" />
                     <div className="realtor_name">
                         <span className="name">Мицавка Юрій</span>
                         <span className='job_title'>Рієлтор</span>

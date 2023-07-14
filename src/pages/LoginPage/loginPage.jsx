@@ -4,6 +4,8 @@ import './dist/loginPage.css'
 export default function LoginPage() {
     const [isAccount, setIsAccount] = useState(1)
     const [regButtonText, setRegButtonText] = useState("Заповнити форму")
+    let a = 0
+    const [count, setCount] = useState(a);
 
     const swaperReg = () =>{
         let swap = document.getElementById("swaper_block")
@@ -16,7 +18,10 @@ export default function LoginPage() {
         let logBtn = document.getElementById("loginBtn")
         let subText1 = document.getElementById("RegSubText")
         let subText2 = document.getElementById("regSubText2")
-
+        let logo = document.getElementById("XLogo")
+        let txhCon = document.getElementById("ThanksCon")
+        let blurdiv = document.getElementById("blurDiv")
+        let filterdiv = document.getElementById("filter")
 
         swap.style.transform = 'skewx(-24deg) translateX(-70vw)'
         snow1.style.left = '50vh'
@@ -45,9 +50,32 @@ export default function LoginPage() {
 
         logBtn.style.marginTop = '2vh'
 
+        a = 1
+        setCount(a + 1)
+
+        if(count === 2){
+            swap.style.opacity = '0'
+            regCon.style.opacity = '0'
+            logCon.style.opacity = '0'
+            logo.style.marginLeft = '100vh'
+            logo.style.transition = '.4s'
+            txhCon.style.opacity = '100%'
+            txhCon.style.zIndex = '3'
+            filterdiv.style.zIndex = '2'
+            blurdiv.style.zIndex = '2'
+            blurdiv.style.opacity = '100%'
+            logo.style.zIndex= '3'
+        }
+        
+
+
+
         setRegButtonText("Зареєструватися")
         setIsAccount(0)
     }
+
+    
+
     const swaperEnter = () =>{
         
         let swap = document.getElementById("swaper_block")
@@ -82,6 +110,11 @@ export default function LoginPage() {
         logCon.style.marginRight = '0vh'
         logCon.style.marginLeft = '0vh'
 
+
+        setCount(prevCount => prevCount + 1)
+
+        
+
         setRegButtonText("Заповнити форму")
         setIsAccount(1)
     }
@@ -93,7 +126,6 @@ export default function LoginPage() {
         let subText1 = document.getElementById("RegSubText")
         let subText2 = document.getElementById("regSubText2")
         let logCon = document.getElementById("loginCon")
-
         let regCon = document.getElementById("register_container")
 
 
@@ -171,7 +203,7 @@ export default function LoginPage() {
 
     return (
         <div className="LoginPage" >
-            <img  onMouseEnter={isAccount === 0 ? sizerEnter: console.log("")} className="auth_logo" src="./img/logo.png" alt="" />
+            <img id="XLogo"  onMouseEnter={isAccount === 0 ? sizerEnter: console.log("")} className="auth_logo" src="./img/logo.png" alt="" />
             <div className="form_main">
                 <div className="forms_container">
                     <div id="register_container"  onMouseEnter={isAccount === 0 ? sizerEnter: console.log("")} className="register_container">
@@ -199,7 +231,19 @@ export default function LoginPage() {
                     </div>
                 </div>
             </div>
-            <div className="filter-con">
+            <div id="ThanksCon" className="Thanks">
+                <div className="ThanksText">
+                    <div className="form_con_thnx">
+                        <div className="reg_thanks">Дякуємо за реєстрацію!</div>
+                        <div className="wait_response">Ми зв'яжемося з Вами найближчим часом, для перевірки данних</div>
+                        <button className="home_button">На головну </button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="blurDiv" className="blur_div">
+            </div>
+            <div id="filter" className="filter-con">
             </div>
             <div onMouseOver={sizerEnter} onMouseOut={sizerOut}  id="swaper_block" className="swaper_block">
                 <div className="pattern_box" id="pattern_box1" >

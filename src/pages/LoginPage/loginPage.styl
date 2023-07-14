@@ -14,6 +14,7 @@
 .form_main
     flexer(c,c,rn)
     sizer(100%,100%)
+    position: absolute
     
 .filter-con
     position: absolute
@@ -74,6 +75,7 @@
     font-weight: 400
     line-height: 118%
     letter-spacing: 0.04vh
+    cursor: pointer
 
 .enter_form:hover
     transition: .2s
@@ -215,6 +217,7 @@
     font-weight: 400
     line-height: 118%
     letter-spacing: 0.04vh
+    cursor: pointer
 
 .enter_form_right:hover
     transition: .2s
@@ -278,3 +281,78 @@
 #background_img2
     sizer(38.4vw,88vh)
     background:radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(44,44,44,1) 70%), url(../../../../public/img/backSnezhinka2.png) 
+
+.Thanks
+    position: absolute
+    sizer(100%,100%)
+    opacity: 0%
+    flexer(c,c,cn)
+    text-align: center
+
+
+.form_con_thnx
+    flexer(c,c,cn)  
+    text-align: center
+    sizer(40.88vh,17.15vh)
+
+.reg_thanks
+    text-align: center
+    color: #fff
+    font-family: 'Overpass',sans-serif
+    font-size: 3.5vh
+    font-style: normal
+    font-weight: 300
+    line-height: 118%
+    letter-spacing: 0.06vh
+
+.wait_response
+    sizer(37.8vh,5.36vh)
+    margin-top: 0.5vh
+    color: rgba(255,255,255,0.4)
+    font-family: 'Open Sans',sans-serif
+    font-size: 2vh
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    letter-spacing: 0.04vh
+
+.home_button
+    flexer(c,c,rn)
+    transition: .3s
+    sizer(15.5vh,4.2vh)
+    border-radius: 0.8vh
+    border: 0.13vh solid white
+    font-family: 'Overpass',sans-serif
+    font-size: 2vh
+    font-style: normal
+    font-weight: 400
+    line-height: 118%
+    letter-spacing: 0.04vh
+    margin-top: 2.8vh
+    // img
+    //   sizer(2.4vh,2.4vh)
+    //   transition: .3s
+    //   opacity: 0%
+    //   overflow: hidden
+    //   margin-left: 0.3vh
+
+.home_button:hover
+    transition: .3s
+    sizer(18vh,4.2vh)
+    cursor: pointer
+    // img
+    //   transition: .3s
+    //   opacity: 100%
+
+.blur_div
+    sizer(100%,100%)
+    background: url('auth/auth-background.png')
+    background-repeat: no-repeat
+    background-size: 100%
+    position: absolute
+    top: 0
+    left: 0
+    filter: blur(0.4vh)
+    opacity: 0%
+    margin: 0 0 0 0
+    padding: 0 0 0 0 

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 .nav_bar {
   user-select: none;
   display: flex;
@@ -12,6 +13,8 @@
 }
 .nav_logo {
   margin-top: 2.7vh;
+  width: 2vw;
+  height: 3.6vh;
 }
 .navigation_menu {
   margin-top: 7.7vh;
@@ -41,8 +44,9 @@
 }
 .grid_link {
   transition: 0.3s;
-  width: 100%;
-  height: 4.5vh;
+  width: 2.5vh;
+  height: 2.5vh;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../../../../public/img/grid.svg");
@@ -79,8 +83,9 @@
 }
 .user_link {
   transition: 0.3s;
-  width: 100%;
-  height: 4.5vh;
+  width: 2.5vh;
+  height: 2.5vh;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../../../../public/img/users.svg");
@@ -117,8 +122,9 @@
 }
 .megaphone_link {
   transition: 0.3s;
-  width: 100%;
-  height: 4.5vh;
+  width: 2.5vh;
+  height: 2.5vh;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../../../../public/img/megaphone.svg");
@@ -155,8 +161,9 @@
 }
 .home_link {
   transition: 0.3s;
-  width: 100%;
-  height: 4.5vh;
+  width: 2.5vh;
+  height: 2.5vh;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../../../../public/img/home.svg");
@@ -184,8 +191,9 @@
 }
 .xbase_link {
   transition: 0.3s;
-  width: 100%;
-  height: 4.5vh;
+  width: 2.5vh;
+  height: 2.5vh;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../../../../public/img/xbase.svg");
@@ -213,8 +221,9 @@
 }
 .calendar_link {
   transition: 0.3s;
-  width: 100%;
-  height: 4.5vh;
+  width: 2.5vh;
+  height: 2.5vh;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../../../../public/img/calendar.svg");
@@ -242,8 +251,9 @@
 }
 .copy_link {
   transition: 0.3s;
-  width: 100%;
-  height: 4.5vh;
+  width: 2.5vh;
+  height: 2.5vh;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../../../../public/img/copy.svg");
@@ -254,6 +264,11 @@
   background-position: center;
 }
 .office {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row wrap;
   border-radius: 1vh;
   margin-top: 33.3vh;
   width: 5.9vh;
@@ -261,8 +276,9 @@
   background: #4f4f4f;
 }
 .office_link {
-  width: 5.9vh;
-  height: 5.9vh;
+  width: 2.1vh;
+  height: 2.1vh;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../../../../public/img/office.svg");

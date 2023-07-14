@@ -8,7 +8,7 @@
     user-select: none
     color: #FFF;
     font-family: Overpass;
-    font-size: 34px;
+    font-size: 3.6vh;
     font-style: normal;
     font-weight: 300;
     line-height: 118%;
@@ -18,7 +18,7 @@
     color: #FFF;
 
     font-family: Open Sans;
-    font-size: 15px;
+    font-size: 1.6vh;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -30,9 +30,9 @@
     transition: .2s
     sizer(15.1vw, 6.1vh)
     flexer(sb,c,rn)
-    border-radius: 12px;
+    border-radius: 1.2vh;
 .price_con:hover
-    border-radius: 12px;
+    border-radius: 1.12vh;
     background: #474747;
 .price_con:hover > .price_block_main
     margin-left 2vh
@@ -40,6 +40,8 @@
     sizer(0.05vw, 5vh)
     opacity: 0.10000000149011612;
     background: #FFF;
+.price_con:hover .line
+    opacity 0
 .price_block_main
     transition 0.2s
     margin-left 4vw
@@ -56,11 +58,11 @@
     cursor: pointer
     flexer(c,c,rw)
     sizer(0vw, 2.7vh)
-    border-radius: 6px;
-    border: 1.2px solid #FFF;
+    border-radius: 0.6vh;
+    border: 0.12vh solid #FFF;
     color: #FFF;
     font-family: Overpass;
-    font-size: 12px;
+    font-size: 1.2vh;
     font-style: normal;
     font-weight: 400;
     line-height: 118%;
@@ -74,7 +76,7 @@
 .price
     color: #FFF;
     font-family: Overpass;
-    font-size: 15px;
+    font-size: 1.6vh;
     font-style: normal;
     font-weight: 400;
     line-height: 118%;
@@ -83,14 +85,14 @@
     color: rgba(255, 255, 255, 0.40);
     /* Aditional text */
     font-family: Open Sans;
-    font-size: 11px;
+    font-size: 1.1vh;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.22px;
 .profile
     transition: .2s
-    border-radius: 12px;
+    border-radius: 1.2vh;
     flexer(c,c,rn)
     margin-left 0.8vh
 .profile:hover
@@ -100,11 +102,12 @@
     margin-left 0.9vw
     transition 0.2s
     flexer(c,c,rw)
-    border-radius: 10px;
+    border-radius: 1vh;
     sizer(3.3vh,3.3vh)
 .bell
     transition 0.2s
     sizer(3vh,3vh)
+    background-size 100%
     background-image: url(../../../../public/img/notification.svg)
     background-repeat: no-repeat;
     background-position: center 
@@ -117,21 +120,20 @@
     flexer(c,e,cn)
 .profile_name
     flexer(c,c,rn)
-    gap 8px
+    gap 0.8vh
 .tag
     position relative
     flexer(c,c,rw)
-    width: 68px;
-    height: 18px;
-    border-radius: 5px;
+    sizer(3.5vw, 1.9vh)
+    border-radius: 0.5vh;
     background: #58aeff5b;
     span
         position: absolute
-        top 4px
+        top 0.55vh
         color: #58AFFF;
         text-align: center;
         font-family: Overpass;
-        font-size: 11px;
+        font-size: 1.1vh;
         font-style: normal;
         font-weight: 400;
         line-height: 118%;
@@ -142,7 +144,7 @@
     text-align: right;
     /* H4 */
     font-family: Overpass;
-    font-size: 15px;
+    font-size: 1.6vh;
     font-style: normal;
     font-weight: 300;
     line-height: 118%;
@@ -152,7 +154,7 @@
     text-align: right;
     /* Aditional text */
     font-family: Open Sans;
-    font-size: 11px;
+    font-size: 1.1vh;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -160,3 +162,4 @@
     opacity: 0.4000000059604645;
 .main_avatar
     margin-left 0.7vw
+    sizer(5.5vh, 5.5vh)

@@ -1,0 +1,329 @@
+@import '../../mixinspack/mixins.styl'
+
+
+.client_card
+    transition .2s
+    flexer(s,c,rn)
+    width: 99%
+    min-height: 10.1vh
+    background: #3D3D3D
+    border-radius: 1vh;
+    border 0.05vh solid rgba(255, 255, 255, 0)
+.client_card:hover
+    background: #484848
+.left_part
+    flexer(s,c,rn)
+.avatar_border
+    margin-left 1.2vw
+    flexer(c,c,rw)
+    sizer(7.6vh,7.6vh)
+    background-size: 100% 
+    background-image: url(../../../../public/img/border_avatar.svg)
+    background-repeat: no-repeat 
+.avatar_icon
+    sizer(70%, 70%)
+.client_name_con
+    margin-left 0.8vw
+.client_name
+    gap 0.5vw
+    flexer(s,c,rn)
+.client
+    color: #FFF;
+    font-family: Overpass;
+    font-size: 2vh;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 118%;
+    letter-spacing: 0.34px;
+.client_id
+    user-select: none
+    cursor pointer
+    position relative
+    flexer(c,c,rw)
+    sizer(2.7vw, 2vh)
+    border-radius: 0.5vh;
+    background: #58aeff5b;
+    span
+        position: absolute
+        top 0.4vh
+        color: #58AFFF;
+        text-align: center;
+        font-family: Overpass;
+        font-size: 1.3vh;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 118%;
+        letter-spacing: 0.22px;
+        text-transform: uppercase;
+.creation_date
+    margin-top 0.2vh
+    color: #FFF;
+    /* Aditional text */
+    font-family: Open Sans;
+    font-size: 1.32vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.22px;
+    opacity: 0.4000000059604645;
+.phone_number_con
+    margin-left 3vw
+    flexer(s,s,rn)
+.phone_number_block
+    flexer(c,c,rn)
+    gap 3vh    
+.p_left_part
+    text-decoration: none
+    transition: 0.2s
+    padding-left: 0.8vw
+    sizer(10.4vw, 6vh)
+    flexer(c,s,cn)
+    border-radius: 0.6vh 0px 0px 0.3vw;
+    background: #444;
+.p_left_part:hover
+    background: #535252;
+
+.phone_numer
+    color: #FFF;
+    /* H4 */
+    font-family: Overpass;
+    font-size: 1.7vh;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 118%;
+.phone_text
+    color: #FFF;
+    
+    /* Aditional text */
+    font-family: Open Sans;
+    font-size: 1.4vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.22px;
+    opacity: 0.4000000059604645;
+.call
+    sizer(1.9vh, 1.9vh)
+    transition: 0.2s
+    opacity: 0
+ .p_left_part:hover  .call
+    opacity: 1
+
+
+.p_right_part
+    flexer(c,c,rw)
+    transition .2s
+    border-left 0.1vw solid #535252
+    sizer(1.19vw, 6vh)
+    border-radius: 0px 0.3vw 0.6vh 0px;
+    background: #444;
+.p_right_part:hover
+    background #535252
+.chevron
+    sizer(1.8vh, 1.8vh)
+.card_line
+    margin 0 3vh 0 3vh
+    sizer(0.06vw, 3.8vh)
+    background: rgba(255, 255, 255, 0.10);
+.rieltor_info_con
+    transition: 0.2s
+    padding: 0 0.8vw
+    box-sizing: border-box
+    flexer(c,s,cn)
+    height 6vh
+    border-radius: 0.6vh;
+    background: #4F4F4F;
+    box-sizing: border-box
+
+.rieltor_name_con
+    flexer(c,c,rn)
+    gap 1.9vw
+
+
+.rieltor_name
+    color: #FFF;
+    /* H4 */
+    font-family: Overpass;
+    font-size: 1.7vh;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 118%;
+    letter-spacing: 0.3px;
+.emoji
+    font-size: 1.7vh;
+.rieltor_phone
+    color: #FFF;
+    /* Aditional text */
+    font-family: Open Sans;
+    font-size: 1.26vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.22px;
+    opacity: 0.4000000059604645;
+
+.rieltor_info_con:hover
+    background: #656565;
+.coment_block
+    flexer(c,c,rn)
+    gap 1.6vh
+.coment
+    color: #FFF;
+    /* H4 */
+    font-family: Overpass;
+    font-size: 1.7vh;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 118%;
+    letter-spacing: 0.3px;
+.edit
+    sizer(1.9vh, 1.9vh)
+    transition: .2s
+    opacity: 0
+.coment_con:hover .edit
+    opacity: 1
+.coment_con
+    transition: 0.2s
+    padding: 0 0.8vw
+    box-sizing: border-box
+    flexer(c,s,cn)
+    height: 6vh
+    border-radius: 0.6vh;
+    background: #444;
+.coment_con:hover
+    background: #535252;
+.comment_title
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 1.3vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.22px;
+    opacity: 0.4000000059604645;  
+
+.objects_block
+    height: 6vh
+    padding: 0.7vh
+    box-sizing: border-box
+    flexer(s,c,rn)
+    background: #323232;
+    border-radius: 0.6vh;
+.requests_con
+    gap 0.7vh
+    flexer(c,s,cn)
+.requests
+    sizer(3.8vw, 1.8vh)
+    padding: 0px 0.3vw
+    box-sizing: border-box
+    flexer(c,c,rw)
+    border-radius: 0.3vh;
+    background: rgba(255, 255, 255, 0.144);
+    color: #fff;
+    font-family: Overpass;
+    font-size: 1.1vh;
+    font-style: normal;
+    font-weight: 300;
+    span
+        margin-right: 0.2vw 
+        color: #FFAF50;
+.objects
+    sizer(3.8vw, 1.8vh)
+    padding: 0px 0.3vw
+    box-sizing: border-box
+    flexer(c,c,rw)
+    border-radius: 0.3vh;
+    background: rgba(255, 255, 255, 0.144);
+    color: #fff;
+    font-family: Overpass;
+    font-size: 1.1vh;
+    font-style: normal;
+    font-weight: 300;
+    span
+        margin-right: 0.2vw 
+        color: #44EBE1
+.objects_line
+    margin 0 1vh 0 1vh
+    sizer(0.05vw, 3.8vh)
+    background: rgba(255, 255, 255, 0.10);
+.img
+    sizer(5vh, 5vh)
+.request_img
+    sizer(1.6vh, 1.6vh)
+
+
+.rigth_part_client
+    margin-left 5vh
+    flexer(c,c,rn)
+.options_btn
+    position relative
+    opacity 0
+    transition: 0.2s
+    flexer(c,c,rw)
+    sizer(3.4vh, 3.4vh)
+    border-radius: 0.5vh;
+    border: 0.14vh solid rgba(255, 255, 255, 0.40);
+.option_menu
+    flexer(sb,c,cn)
+    opacity 0
+    overflow: hidden
+    transition: 0.2s
+    right -0.05vw
+    position: absolute
+    sizer(3.5vh,3.5vh)
+    border-radius: 1vh;
+    border: 0.05vw solid rgba(0, 0, 0, 0.10);
+    background: rgba(255, 255, 255, 0.70);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.03);
+    backdrop-filter: blur(8.5px);
+.options_btn:hover .option_menu
+    opacity 1
+    sizer(7.29vw,8.1vh)
+.options_client
+    sizer(1.9vh, 1.9vh)
+
+    
+.option_line
+    transition: 0.2s
+
+    margin 0 1vw
+    sizer(0.05vw, 2.7vh)
+    background: #FFF;
+    opacity: 0;
+.client_arrow
+    transition: 0.2s
+    sizer(2.8vh, 2.8vh)
+    transform: rotate(-45deg);
+    opacity: 0.4000000059604645;
+
+.client_card:hover .client_arrow
+
+    transform: rotate(0deg);
+    opacity: 1
+.client_card:hover .option_line
+    opacity 0.2
+.client_card:hover .options_btn
+    opacity 1
+
+
+.split_style
+    transition: 0.2s
+    width: 100%
+    height: 2.5vh
+    flexer(sb,c,rn)
+.option_img
+    margin-right: 0.25vw
+.option_text
+    margin-left 0.45vw
+    color: #000;
+    font-family: Overpass;
+    font-size: 1.2vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118%;
+    letter-spacing: 0.24px;
+.split_style:hover
+    background: #FFF;
+.share_con
+    border: 0.05vw solid rgba(0, 0, 0, 0.10);
+

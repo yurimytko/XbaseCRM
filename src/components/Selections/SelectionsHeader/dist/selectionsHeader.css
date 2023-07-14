@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+.selectionsHeader {
+  margin-top: 1.75rem;
+  background: #454545;
+  border-radius: 1.7vh;
+  width: 87.5vw;
+  height: 9.25vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-flow: row nowrap;
+}
+.avatar_left {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 1000px;
+  margin-left: 0.78vw;
+}
+.about_user_selections {
+  margin-left: 0.78vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-flow: column nowrap;
+  gap: 2px;
+}
+.left_part {
+  height: 100%;
+}
+.user_name {
+  color: #fff;
+  font-family: 'Overpass', sans-serif;
+  font-size: 2.6vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 118%;
+  letter-spacing: 0.04vh;
+}
+.role_selectins {
+  color: #fff;
+  font-family: Overpass;
+  font-size: 1.4vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+  letter-spacing: 0.28px;
+  opacity: 0.5;
+}
+.connections_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row nowrap;
+  gap: 0.8vw;
+  margin-left: 3.25vw;
+}
+.phone_icon {
+  transition: 0.25s;
+  width: 2.375rem;
+  height: 2.375rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row nowrap;
+  background: rgba(255,255,255,0.18);
+}
+.phone_icon:hover {
+  transition: 0.25s;
+  background-color: #808080;
+  cursor: pointer;
+}
+.header_break {
+  width: 0.063rem;
+  height: 100%;
+  opacity: 0.140000000596046;
+  background: #fff;
+  margin-left: 1.17vw;
+}
+.right_part {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row nowrap;
+  gap: 1.17vw;
+}
+.currency_block {
+  transition: 0.25s;
+  width: 4.75vw;
+  height: 5vh;
+  background: #343434;
+  border-radius: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row nowrap;
+}
+.currency_block:hover {
+  background-color: #808080;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.currency_text {
+  margin-top: 0.25rem;
+  letter-spacing: 2vw;
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.87vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 118%;
+  letter-spacing: 0.018vw;
+}
+.currency_text:hover {
+  background-color: #808080;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.hist_new_block {
+  position: relative;
+  text-align: center;
+  width: 14.375rem;
+  height: 2.375rem;
+  border-radius: 8px;
+  background: rgba(0,0,0,0.25);
+  margin-right: 1.17vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row nowrap;
+}
+.text_swiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row nowrap;
+  width: 6.875rem;
+  height: 1.875rem;
+  transition: 0.4s;
+  margin-top: 0.25rem;
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Overpass;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 118%; /* 16.52px */
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.hist_swaper {
+  transition: 0.4s;
+  transform: translateX(3.525rem);
+  width: 6.875rem;
+  height: 1.875rem;
+  position: absolute;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.25);
+}
+#history_block {
+  opacity: 0.5;
+}
+.second_curr_block {
+  overflow: hidden;
+  text-align: center;
+  color: #d3d3d3;
+  transition: 0.2s;
+  opacity: 0%;
+  width: 4vw;
+  height: 0vh;
+  border-bottom-right-radius: 0.3vw;
+  border-bottom-left-radius: 0.3vw;
+  position: absolute;
+  top: 5.05vh;
+  background: rgba(255,255,255,0.25);
+}
+.currCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: column nowrap;
+}
+.UAH:hover {
+  background-color: #808080;
+  cursor: pointer;
+}

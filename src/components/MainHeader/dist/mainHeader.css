@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 .main_header {
   display: flex;
   justify-content: space-between;
@@ -13,7 +14,7 @@
   user-select: none;
   color: #fff;
   font-family: Overpass;
-  font-size: 34px;
+  font-size: 3.6vh;
   font-style: normal;
   font-weight: 300;
   line-height: 118%;
@@ -23,7 +24,7 @@
   user-select: none;
   color: #fff;
   font-family: Open Sans;
-  font-size: 15px;
+  font-size: 1.6vh;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -46,10 +47,10 @@
   align-items: center;
   align-content: center;
   flex-flow: row nowrap;
-  border-radius: 12px;
+  border-radius: 1.2vh;
 }
 .price_con:hover {
-  border-radius: 12px;
+  border-radius: 1.12vh;
   background: #474747;
 }
 .price_con:hover > .price_block_main {
@@ -60,6 +61,9 @@
   height: 5vh;
   opacity: 0.100000001490116;
   background: #fff;
+}
+.price_con:hover .line {
+  opacity: 0;
 }
 .price_block_main {
   transition: 0.2s;
@@ -89,11 +93,11 @@
   flex-flow: row wrap;
   width: 0vw;
   height: 2.7vh;
-  border-radius: 6px;
-  border: 1.2px solid #fff;
+  border-radius: 0.6vh;
+  border: 0.12vh solid #fff;
   color: #fff;
   font-family: Overpass;
-  font-size: 12px;
+  font-size: 1.2vh;
   font-style: normal;
   font-weight: 400;
   line-height: 118%;
@@ -109,7 +113,7 @@
 .price {
   color: #fff;
   font-family: Overpass;
-  font-size: 15px;
+  font-size: 1.6vh;
   font-style: normal;
   font-weight: 400;
   line-height: 118%;
@@ -119,7 +123,7 @@
   color: rgba(255,255,255,0.4);
 /* Aditional text */
   font-family: Open Sans;
-  font-size: 11px;
+  font-size: 1.1vh;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -127,7 +131,7 @@
 }
 .profile {
   transition: 0.2s;
-  border-radius: 12px;
+  border-radius: 1.2vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,7 +151,7 @@
   align-items: center;
   align-content: center;
   flex-flow: row wrap;
-  border-radius: 10px;
+  border-radius: 1vh;
   width: 3.3vh;
   height: 3.3vh;
 }
@@ -155,6 +159,7 @@
   transition: 0.2s;
   width: 3vh;
   height: 3vh;
+  background-size: 100%;
   background-image: url("../../../../public/img/notification.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -179,7 +184,7 @@
   align-items: center;
   align-content: center;
   flex-flow: row nowrap;
-  gap: 8px;
+  gap: 0.8vh;
 }
 .tag {
   position: relative;
@@ -188,18 +193,18 @@
   align-items: center;
   align-content: center;
   flex-flow: row wrap;
-  width: 68px;
-  height: 18px;
-  border-radius: 5px;
+  width: 3.5vw;
+  height: 1.9vh;
+  border-radius: 0.5vh;
   background: rgba(88,174,255,0.357);
 }
 .tag span {
   position: absolute;
-  top: 4px;
+  top: 0.55vh;
   color: #58afff;
   text-align: center;
   font-family: Overpass;
-  font-size: 11px;
+  font-size: 1.1vh;
   font-style: normal;
   font-weight: 400;
   line-height: 118%;
@@ -211,7 +216,7 @@
   text-align: right;
 /* H4 */
   font-family: Overpass;
-  font-size: 15px;
+  font-size: 1.6vh;
   font-style: normal;
   font-weight: 300;
   line-height: 118%;
@@ -222,7 +227,7 @@
   text-align: right;
 /* Aditional text */
   font-family: Open Sans;
-  font-size: 11px;
+  font-size: 1.1vh;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -231,4 +236,6 @@
 }
 .main_avatar {
   margin-left: 0.7vw;
+  width: 5.5vh;
+  height: 5.5vh;
 }
