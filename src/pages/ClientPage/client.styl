@@ -11,7 +11,7 @@
 .client_header
     sizer(100%, 4   vh)
     margin-top 1.9vh
-    flexer(sb,c,rn)
+    flexer(sb,s,rn)
 .client_title
     color: #FFF;
     font-family: Overpass;
@@ -30,7 +30,7 @@
     display: none
 .search
     position relative
-    flexer(c,c,rn)
+    flexer(c,s,rn)
     gap 0.73vw
 .create_new
     transition: 0.2s
@@ -39,6 +39,7 @@
     border-radius: 0.8vh;
     border: 0.15vh solid rgba(255, 255, 255, 0.20)
 .add
+    cursor: pointer
     transition: 0.2s
     sizer(2vh, 2vh)
     opacity: 0.4000000059604645;
@@ -47,6 +48,7 @@
 .create_new:hover .add
     opacity: 1
 .choose
+    margin-left: 0.8vw 
     color: #FFF;
     font-family: Overpass;
     font-size: 1.6vh;
@@ -56,12 +58,16 @@
     letter-spacing: 0.3px;
     opacity: 0.4000000059604645;
 .choose_block
-    gap 0.5vw
-    padding-left: 0.8vw 
-    padding-right: 0.2vw 
+    overflow: hidden
+    position relative
+    z-index 5
+    backdrop-filter: blur(18.5px);
+    padding-top: 0.4vh
+    padding-bottom: 0.4vh
+
     box-sizing: border-box
-    flexer(c,c,rn)
-    height: 3.6vh
+    flexer(c,c,cn)
+    height: 100%    
     transform-origin: bottom
     border-radius: 0.8vh;
     background: rgba(255, 255, 255, 0.20);
@@ -127,7 +133,30 @@
     width: 0
 
 
-
+.unavailable
+    margin-right: 0.2vw 
+    flexer(c,c,rn)
+    gap 0.5vw
+.available
+    transition: 0.2s
+    overflow: hidden
+    flexer(s,s,cn)
+    sizer(100%, 0vh)
+.a_punkts
+    cursor pointer
+    box-sizing: border-box
+    padding-left: 0.6vw 
+    color: #FFF;
+    font-family: Overpass;
+    font-size: 1.6vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118%;
+    letter-spacing: 0.3px;
+    opacity: 0.4000000059604645;
+    flexer(s,c,rn)
+    sizer(100%, 3.2vh)
+    border-top 0.05vw solid rgba(255, 255, 255, 0.295);
 
 
 

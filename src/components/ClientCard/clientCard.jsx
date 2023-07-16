@@ -4,9 +4,30 @@ import './dist/clientCard.css'
 
 
 
-export default function ClientCard({ counter, setCounter }) {
+export default function ClientCard({ cardCon, counter, setCounter }) {
     const [activeCard, setActiveCard] = useState(1);
     const clientCard = useRef();
+    const containerRef = useRef(null);
+
+    const handleScroll = (event) => {
+        const container = containerRef.current;
+        container.scrollTo({
+          left: container.scrollLeft + event.deltaY *3,
+          behavior: 'smooth',
+        });
+      };
+
+      const handleMouseEnter = () => {
+        const v = cardCon.current;
+        v.style.overflow = 'hidden';
+      };
+    
+      const handleMouseLeave = () => {
+        const v = cardCon.current;
+        v.style.overflow = 'scroll';
+      };
+
+
 
     const activeClient = () => {
         if (activeCard === 1) {
@@ -24,6 +45,8 @@ export default function ClientCard({ counter, setCounter }) {
         const id = document.getElementById('id_block').innerText
         navigator.clipboard.writeText(id)
     };
+
+
 
 
 
@@ -84,7 +107,8 @@ export default function ClientCard({ counter, setCounter }) {
                         <div className="objects"><span>3</span> Об'єкта</div>
                     </div>
                     <div className="objects_line"></div>
-                    <div className="object_carousel_con">
+                    <div ref={containerRef} onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave} onWheel={handleScroll} className="object_carousel_con">
                         <div className="object_carousel">
                             <img className='img' src="./img/flat_photo.png" alt="" />
                             <img className='img' src="./img/flat_photo.png" alt="" />
@@ -107,11 +131,11 @@ export default function ClientCard({ counter, setCounter }) {
                         </div>
                         <div className="share_con split_style">
                             <span className='option_text'>Передати</span>
-                            <img className='option_img' src="./img/star_b.svg" alt="" />
+                            <img className='option_img' src="./img/users_b.svg" alt="" />
                         </div>
                         <div className="delete_con split_style">
                             <span className='option_text'>Видалити</span>
-                            <img className='option_img 'src="./img/star_b.svg" alt="" />
+                            <img className='option_img 'src="./img/delete.svg" alt="" />
                         </div>
                     </div>
                 </div>
